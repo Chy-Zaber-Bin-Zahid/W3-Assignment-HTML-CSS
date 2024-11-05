@@ -1227,7 +1227,7 @@
     justify-content: space-between;
     align-items: start;
     gap: 58px;
-    margin-top: 36px;
+    margin: 36px 0px;
 }
 
 .rating-summary {
@@ -1373,7 +1373,7 @@
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    border: 1px solid rgb(160, 160, 160);
+    border: 1px solid rgb(185, 185, 185);
     border-radius: 20px;
     background: white;
     color: #2563eb;
@@ -1381,7 +1381,7 @@
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 24px;
+    margin-top: 10px;
 }
 
 .see-all-button:hover {
@@ -1413,4 +1413,33 @@
     .review-card {
         width: 280px; /* Slightly smaller on mobile */
     }
+}
+
+/* Host */
+.host{
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    margin-top: 36px;
+    row-gap: 56px;
+}
+
+.host-main{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 36px;
+}
+
+.host h3{
+    font-size: 17px;
+}
+
+.host p{
+    font-size: 14px;
+}
+
+.host-language{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
