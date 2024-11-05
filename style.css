@@ -722,3 +722,150 @@
 .see-all-link:hover {
     text-decoration: underline;
 }
+
+/* about */
+.property-container {
+    max-width: 800px;
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.about h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222222;
+    margin: 46px 0 36px 0;
+}
+
+.about h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    font-weight: 500;
+    color: black !important;
+    margin: 24px 0 8px 0;
+    font-size: 16px !important;
+}
+
+.property-details,
+.highlights,
+.location {
+    margin-bottom: 24px;
+}
+
+.property-details p,
+.highlights p,
+.location p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.policies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policies li {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.manager-section {
+    padding-top: 15px;
+}
+
+.manager-info {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    flex-direction: column;
+}
+.manager-info p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.manager-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.languages-section {
+    margin: 16px 0;
+}
+
+.languages-section h2{
+    margin: 0 0 6px 0;
+}
+
+.languages-section p {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.amenities {
+    display: flex;
+    gap: 86px;
+    margin-top: 66px;
+}
+
+.amenities h1 {
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 86px;
+    margin-bottom: 24px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.amenity-item svg {
+    width: 24px;
+    height: 24px;
+    color: #222222;
+}
+
+.amenity-item span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.amenities-link{
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+}
