@@ -988,12 +988,12 @@
     display: grid;
     grid-template-columns: 330px 1fr;
     margin-top: 36px;
+    row-gap: 56px;
 }
 
 .rules-right{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 36px;
     max-width: 800px;
 }
 
@@ -1085,4 +1085,361 @@
         grid-column: 1;
         text-align: left;
     }
+}
+
+/* Cancellation */
+/* .timeline-container {
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 12px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    transform: translateY(-50%);
+}
+
+.point {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #e0e0e0;
+    z-index: 1;
+}
+
+.point.active {
+    background: black;
+    border-color: black;
+}
+
+.point-label {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #666;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.status-label {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #666;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.timeline-progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 25%;
+    background-color: black;
+    transform: translateY(-50%);
+    z-index: 0;
+} */
+
+.info h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-item {
+    padding: 12px 0;
+    font-size: 15px;
+    color: black;
+}
+
+/* Frequently questions */
+  .faq-item {
+    margin-bottom: 8px;
+  }
+  
+  .faq-question {
+    position: relative;
+    padding: 12px 16px;
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1a1a1a;
+    list-style: none;
+  }
+  
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+  
+  .faq-question::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 10px;
+    height: 10px;
+    border: solid #666;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+    transition: transform 0.2s ease;
+  }
+  
+  details[open] .faq-question::before {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  
+  .faq-question:hover {
+    background-color: #f5f5f5;
+  }
+
+  /* Review */
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 58px;
+    margin: 36px 0px;
+}
+
+.rating-summary {
+    min-width: 200px;
+}
+
+.rating {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.rating-score {
+    font-size: 48px;
+    font-weight: 500;
+    color: #0f766e;
+    line-height: 1;
+}
+
+.rating-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0 12px 0;
+}
+
+.review-count {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+}
+
+.review-note {
+    font-size: 12px;
+    color: black;
+}
+
+.recent-reviews {
+    flex: 1;
+    min-width: 0; /* Important for proper flex behavior */
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.reviews-wrapper {
+    position: relative;
+    margin: 0 -24px; /* Compensate for container padding */
+    padding: 0 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.reviews-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.reviews-flex {
+    display: flex;
+    gap: 20px;
+    padding: 4px 0; /* Space for box-shadow */
+    width: fit-content;
+}
+
+.review-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px; /* Fixed width for cards */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    transition: box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-rating {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    color: #374151;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.read-more {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 6px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.reviewer-name {
+    font-weight: 500;
+}
+
+.review-date {
+    color: #6b7280;
+}
+
+.see-all-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 20px;
+    background: white;
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.see-all-button:hover {
+    background-color: #f3f4f6;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .review {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .rating-summary {
+        text-align: center;
+    }
+
+    .rating {
+        justify-content: center;
+    }
+
+    .review-count {
+        justify-content: center;
+    }
+
+    .review-card {
+        width: 280px; /* Slightly smaller on mobile */
+    }
+}
+
+/* Host */
+.host{
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    margin-top: 36px;
+    row-gap: 56px;
+}
+
+.host-main{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 36px;
+}
+
+.host h3{
+    font-size: 17px;
+}
+
+.host p{
+    font-size: 14px;
+}
+
+.host-language{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
