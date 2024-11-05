@@ -823,19 +823,19 @@
     font-weight: 500;
 }
 
-.amenities {
+.amenities-about {
     display: flex;
     gap: 86px;
     margin-top: 66px;
 }
 
-.amenities h1 {
+.amenities-about h1 {
     font-weight: 600;
     color: #222222;
     margin: 0;
 }
 
-.amenities-grid {
+.amenities-grid-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 86px;
@@ -865,7 +865,7 @@
 }
 
 @media (max-width: 480px) {
-    .amenities-grid {
+    .amenities-grid-about {
         grid-template-columns: 1fr;
     }
 }
