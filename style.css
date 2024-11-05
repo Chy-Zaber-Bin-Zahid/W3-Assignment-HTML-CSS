@@ -983,3 +983,106 @@
     height: 22px;
     color: white;
 }
+/* Rules */
+.rules{
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    margin-top: 36px;
+}
+
+.rules-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 36px;
+    max-width: 800px;
+}
+
+.house-rules{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 0;
+    max-width: 850px;
+    margin-top: 36px;
+    
+}
+
+.rules h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.check-times {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.check-times p {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+
+.age-requirement {
+    grid-column: 2;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.rule-item svg {
+    width: 24px;
+    height: 24px;
+    color: #222222;
+    flex-shrink: 0;
+}
+
+.rule-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+    margin: 0 0 4px 0;
+}
+
+.rule-content p {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.damage-section p {
+    font-size: 14px;
+    color: #484848;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .rules-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .check-times {
+        grid-template-columns: 1fr;
+    }
+
+    .age-requirement {
+        grid-column: 1;
+        text-align: left;
+    }
+}
