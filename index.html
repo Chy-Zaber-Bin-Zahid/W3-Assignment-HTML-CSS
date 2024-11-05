@@ -124,8 +124,16 @@
                     <h2>Explore the area</h2>
                     <div class="explore">
                         <div class="map-container">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Map">
-                            <a href="#" class="map-link">View in a map</a>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19245.157353095083!2d-134.41989442419435!3d58.301944982336664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54011e5f0fa4c3d9%3A0x279de10539a2b815!2sJuneau%2C%20AK%2C%20USA!5e0!3m2!1sen!2sus!4v1709659085799!5m2!1sen!2sus"
+                                allowfullscreen="" 
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="map-content">
+                                <h3>Juneau, Alaska</h3>
+                                <a href="#" class="map-link">View in a map</a>
+                            </div>
                         </div>
                         <div class="locations">
                             <div class="location-item">
@@ -175,37 +183,52 @@
                         <p class="free-cancel">Free cancellation <span class="info-icon">ⓘ</span></p>
                         <p class="cancel-date">Before Mon, Nov 4</p>
                     </div>
-                    <p class="dates-available">✓ Your dates are available</p>
-                    <div class="date-picker">
+                    <p class="dates-available">✓ Your dates are available</p>     
+                    <div class="date-range">
                         <div class="date-input">
-                            <label>Start date</label>
-                            <input type="text" value="Nov 18" readonly>
+                            <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <div class="date-content">
+                                <span class="date-label">Start date</span>
+                                <span class="date-value">Nov 18</span>
+                            </div>
                         </div>
                         <div class="date-input">
-                            <label>End date</label>
-                            <input type="text" value="Nov 20" readonly>
+                            <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <div class="date-content">
+                                <span class="date-label">End date</span>
+                                <span class="date-value">Nov 20</span>
+                            </div>
                         </div>
                     </div>
     
-                    <div class="travelers-input">
-                        <label>Travelers</label>
-                        <input type="text" value="2 travelers" readonly>
+                    <div class="date-input travel">
+                        <div class="date-content">
+                            <span class="date-label travel-label">Travelers</span>
+                            <span class="date-value">2 travelers</span>
+                        </div>
                     </div>
     
                     <div class="total">
                         <div class="total-row">
-                            <span>Total</span>
+                            <span class="total-amount">Total</span>
                             <span class="total-amount">$543</span>
                         </div>
-                        <p class="total-note">Total includes fees, not tax <a href="#" class="price-details">Price details</a></p>
+                       <div class="total-price">
+                         <p class="total-note">Total includes fees, not tax</p>
+                         <a href="#" class="price-details">Price details</a>
+                       </div>
                     </div>
     
                     <button class="book-now">Book now</button>
                     <p class="charge-note">You will not be charged yet</p>
                 </div>
     
-                <button class="contact-host">Contact host</button>
-                <p class="property-id">Property # 98381024h</p>
+                <a href="#" class="contact-host">Contact host</a>
+                <p class="property-id">Property # <span>98381024h</span></p>
             </aside>
         </div>
     </div>
