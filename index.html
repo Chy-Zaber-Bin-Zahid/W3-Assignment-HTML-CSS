@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Assignment HTML/CSS</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="nav-link">🌐 United States</a>
+            <a href="#" class="nav-link">🌐 &MediumSpace; United States</a>
             <a href="#" class="nav-link">Trip Boards</a>
             <a href="#" class="nav-link">List your property</a>
             <a href="#" class="nav-link">Help</a>
@@ -20,9 +21,9 @@
     <!-- Gallery -->
     <section class="container">
         <div class="gallery-header">
-            <a href="#" class="back-link">← See all properties</a>
+            <a href="#" class="back-link">&#129104; See all properties</a>
             <div class="action-buttons">
-                <button class="btn-share">Share</button>
+                <button class="btn-share"><i class="fa fa-upload"></i> Share</button>
                 <button class="btn-save"><span class="heart">&#9825;</span> <h1 class="heart-text">Save</h1></button>
             </div>
         </div>
@@ -45,7 +46,7 @@
                 </div>
             </div>
             <div class="more-image">
-                30+
+                &#128444; &MediumSpace; 30+
             </div>
         </div>
     </section>
@@ -63,11 +64,11 @@
                 <h1 class="property-title">Juneau Vacation Home: Stunning View + Beach Access</h1>
                 
                 <div class="rating">
-                    <div>
+                    <div class="rating-parent">
                         <span class="rating-badge">9.8</span>
-                        <span class="rating-text">Exceptional</span>
+                        <span class="rating-text-overview">Exceptional</span>
                     </div>
-                    <a href="#" class="review-link">See all 24 reviews →</a>
+                    <a href="#" class="review-link">See all 24 reviews &#129106;</a>
                 </div>
     
                 <div class="specs-grid">
@@ -156,7 +157,7 @@
                                 <span>Juneau, AK (JNU-Juneau Intl.)</span>
                                 <span class="drive-time">14 min drive</span>
                             </div>
-                            <a href="#" class="see-all-link">See more about this area →</a>
+                            <a href="#" class="see-all-link">See more about this area &#129106;</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +166,7 @@
             <aside class="booking-sidebar">
                 <div class="member-box">
                     <div class="member-content">
-                        <img src="" alt="flower">
+                        <img src="/images/card.png" alt="flower">
                         <div class="member-sign">
                             <p>Members get our best prices when signed in!</p>
                             <button class="sign-in-btn">Sign in</button>
@@ -349,7 +350,7 @@
             <div class="manager-section">
                 <h2>Property manager</h2>
                 <div class="manager-info">
-                    <img src="/placeholder.svg" alt="Evolve Logo" class="manager-logo">
+                    <img src="/images/card.png" alt="Evolve Logo" class="manager-logo">
                     <p>Evolve</p>
                 </div>
             </div>
@@ -397,7 +398,8 @@
                     </div>
                     <div class="amenity-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 12h18M4 8h16M6 4h12"/>
+                            <circle cx="12" cy="12" r="8"/>
+                            <path d="M12 8v8M8 12h8"/>
                         </svg>
                         <span>Ocean view</span>
                     </div>
@@ -637,6 +639,34 @@
                                 <div class="review-date">Sep 25, 2024</div>
                             </div>
                         </div>
+
+                        <div class="review-card">
+                            <div>
+                                <div class="review-rating">10/10 Excellent</div>
+                                <p class="review-text">
+                                    A very cozy home for the two of us in a quiet area NW of town. Beautiful water view. We enjoyed the art, read up on it and visited the...
+                                </p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="reviewer">
+                                <div class="reviewer-name">Kyle G.</div>
+                                <div class="review-date">Sep 25, 2024</div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <div class="review-rating">10/10 Excellent</div>
+                                <p class="review-text">
+                                    A very cozy home for the two of us in a quiet area NW of town. Beautiful water view. We enjoyed the art, read up on it and visited the...
+                                </p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="reviewer">
+                                <div class="reviewer-name">Kyle G.</div>
+                                <div class="review-date">Sep 25, 2024</div>
+                            </div>
+                        </div>
                 
                         <div class="review-card">
                             <div>
@@ -669,8 +699,7 @@
                 </div>
                 
                 <button class="see-all-button">
-                    See all 24 reviews
-                    <span class="arrow">→</span>
+                    See all 24 reviews &#129106;
                 </button>
             </div>
         </div>
@@ -689,8 +718,7 @@
         <h2>Send a message</h2>
         <div>
             <button class="see-all-button msg-button">
-                Contact host
-                <span class="arrow">→</span>
+                Contact host &#129106;
             </button>
         </div>
     </section>
