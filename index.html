@@ -69,6 +69,13 @@
                     <img src="/images/nature-2.jpg" alt="More photos">
                 </div>
             </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
             <div class="more-image">
                 &#128444; &MediumSpace; 30+
             </div>
@@ -371,6 +378,8 @@
                 </ul>
             </div>
 
+            <div class="see-more-about" ><p>See more</p></div>
+
             <div class="manager-section">
                 <h2>Property manager</h2>
                 <div class="manager-info">
@@ -476,6 +485,13 @@
                 <p class="age-requirement">Minimum age to rent: 25</p>
             </div>
 
+            <div class="check-times-responsive" >
+                <p>Check in after 3:00 PM</p>
+                <p>Check out before 11:00 AM</p>
+                <p>Minimum age to rent: 25</p>
+                <div class="see-more-rules" ><p>See more</p></div>
+            </div>
+
             <div class="rules-first">
                 <div class="rule-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -527,7 +543,7 @@
             <h2>Damage and incidentals</h2>
         </div>
         <div>
-            <p>You will be responsible for any damage to the rental property caused by you or your party during your stay.</p>
+            <p class="damage-para" >You will be responsible for any damage to the rental property caused by you or your party during your stay.</p>
         </div>
 
         <!-- Cancellation -->
@@ -559,6 +575,10 @@
                 <div class="policy-section">
                     <div class="time-label">Before</div>
                     <div class="date">Nov 4</div>
+                    <div class="date-responsive">
+                        <div class="time-label-res">Before</div>
+                        <div class="date-res">Nov 4</div>
+                    </div>
                     <div class="policy-content">
                         <h3 class="policy-title">Full refund</h3>
                         <p class="policy-description">Cancel your reservation before Nov 4 at 11:59 PM, and you'll get a full refund. Times are based on the property's local time.</p>
@@ -570,6 +590,10 @@
                 <div class="policy-section">
                     <div class="time-label">After</div>
                     <div class="date">Nov 4</div>
+                    <div class="date-responsive">
+                        <div class="time-label-res">After</div>
+                        <div class="date-res">Nov 4</div>
+                    </div>
                     <div class="policy-content">
                         <h3 class="policy-title">No refund</h3>
                         <p class="policy-description">After that, you won't get a refund.</p>
@@ -607,7 +631,7 @@
 
         <!-- Frequently question  -->
         <h2>Frequently asked questions</h2>
-        <div class="">
+        <div class="faq-default">
             <details class="faq-item">
               <summary class="faq-question">
                 Is Juneau Vacation Home: Stunning View + Beach Access pet-friendly?
@@ -632,6 +656,17 @@
               </summary>
             </details>
           </div>
+          <div class="faq-responsive">
+            <details class="faq-item">
+              <summary class="faq-question">
+                Is Juneau Vacation Home: Stunning View + Beach Access pet-friendly?
+              </summary>
+            </details>
+          
+            <div class="see-more-faq" ><p>See more</p></div>
+          </div>
+
+        
     </section>
     <!-- Review -->
     <section class="container">
@@ -741,13 +776,21 @@
             </div>
         </div>
         <!-- Send message -->
+        <h2 class="msg">Send a message</h2>
+        <div class="msg">
+            <button class="see-all-button msg-button">
+                Contact host &#129106;
+            </button>
+        </div>
+    </section>
+    <div class="msg-responsive container">
         <h2>Send a message</h2>
         <div>
             <button class="see-all-button msg-button">
                 Contact host &#129106;
             </button>
         </div>
-    </section>
+    </div>
 </body>
 
 <script src="https://kit.fontawesome.com/501c147565.js" crossorigin="anonymous"></script>

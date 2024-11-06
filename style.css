@@ -49,6 +49,10 @@
     display: none;
 }
 
+.carousel-dots{
+    display: none;
+}
+
 @media (max-width: 750px){
     .nav-link {
         display: none;
@@ -57,6 +61,35 @@
     .nav-responsive{
         display: block;
     }
+
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+      
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .dot.active {
+        background-color: #ffffff;
+      }
+      
+      .dot:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
 }
 
 .sign-in {
@@ -960,6 +993,13 @@
     margin-top: 10px;
 }
 
+.see-more-about{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+}
+
 @media (max-width: 670px){
     .amenities-about{
         flex-direction: column;
@@ -968,6 +1008,31 @@
 
     .amenities-grid-about{
         margin-bottom: 46px;
+    }
+
+    .see-more-about{
+        display: block;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .see-more-about::after {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Height of the fade effect */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    .manager-section{
+        display: none;
+    }
+
+    .languages-section{
+        display: none;
     }
 }
 
@@ -1173,6 +1238,69 @@
     margin: 0;
 }
 
+.check-times-responsive{
+    display: none;
+}
+
+.see-more-rules{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 620px){
+    .check-times{
+        display: none;
+    }
+
+    .rules-first{
+        display: none;
+    }
+
+    .rules-second{
+        display: none;
+    }
+
+    .check-times-responsive{
+        display: block;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .see-more-rules{
+        display: block;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .see-more-rules::after {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Height of the fade effect */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    .damage-para {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 920px){
+    .rules{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 /* Cancellation */
 .refund{
     display: flex;
@@ -1299,6 +1427,20 @@
     font-weight: 600;
 }
 
+.time-label-res {
+    grid-area: time-label;
+    font-size: 12px;
+    color: #374151;
+    font-weight: bold;
+}
+
+.date-res {
+    grid-area: date;
+    font-size: 16px;
+    color: #374151;
+    font-weight: 600;
+}
+
 .policy-content {
     grid-area: content;
 }
@@ -1339,6 +1481,78 @@
     padding: 12px 0;
     font-size: 15px;
     color: black;
+}
+
+.date-responsive{
+    display: none;
+}
+
+
+@media (max-width: 620px){
+    .timeline-points{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .timeline-point{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .timeline-point span{
+        width: 1px;
+    }
+
+    .point{
+        margin: 0;
+    }
+    
+    .refund-label.full{
+        top: 50px;
+        left: 30%;
+    }
+
+    .refund-label.none{
+        top: 125px;
+        left: 30%;
+    }
+
+    .policy-section{
+        gap: 70px;
+    }
+
+    .time-label, .date{
+        display: none;
+    }
+
+    .date-responsive{
+        display: block;
+    }
+
+    .timeline-points::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 48.7%;
+        width: 2px;
+        height: 50%;
+        background-color: #1f2937;
+        z-index: 1;
+    }
+    
+    .timeline-points::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 48.7%;
+        width: 2px;
+        height: 50%;
+        background-color: #e5e7eb;
+        z-index: 1;
+    }
+    
 }
 
 /* Frequently questions */
@@ -1382,8 +1596,50 @@
     background-color: #f5f5f5;
   }
 
-  /* Review */
+  .faq-responsive{
+    display: none;
+  }
 
+  .see-more-faq{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 14px;
+}
+
+  @media (max-width: 620px){
+    .faq-default{
+        display: none;
+    }
+
+    .faq-responsive{
+        display: block;
+      }
+
+      .faq-question{
+        padding-right: 0;
+      }
+
+      .see-more-faq{
+        display: block;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .see-more-faq::after {
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Height of the fade effect */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+  }
+
+  /* Review */
 .review {
     display: flex;
     justify-content: space-between;
@@ -1532,7 +1788,7 @@
 }
 
 .see-all-button {
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
@@ -1553,6 +1809,23 @@
 
 .arrow {
     font-size: 18px;
+}
+
+@media (max-width: 620px){
+    .review{
+        flex-direction: column;
+        overflow: hidden;
+        gap: 18px;
+    }
+
+    .recent-reviews{
+        width: 100%;
+    }
+
+    .see-all-button{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Host */
@@ -1586,4 +1859,34 @@
 /* Send message */
 .msg-button{
     margin: 0 0 36px 0;
+}
+
+.msg-responsive{
+    display: none;
+
+}
+
+@media (max-width: 620px){
+    .host{
+        grid-template-columns: 1fr;
+        gap: 46;
+    }
+
+    .host-main{
+        gap: 66px;
+    }
+    
+    .msg{
+        display: none;
+    }
+
+    .msg-responsive{
+        display: block;
+    }
+
+    .msg-responsive button{
+        width: fit-content;
+        margin-top: 16px;
+        padding: 6px 26px 4px 26px;
+    }
 }
