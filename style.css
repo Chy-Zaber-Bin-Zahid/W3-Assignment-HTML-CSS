@@ -45,6 +45,20 @@
     cursor: pointer;
 }
 
+.nav-responsive{
+    display: none;
+}
+
+@media (max-width: 750px){
+    .nav-link {
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+}
+
 .sign-in {
     padding: 8px 16px;
     border: 1px solid #e5e5e5;
@@ -56,6 +70,10 @@
 }
 
 /* Gallery */
+.gallery{
+    position: relative;
+}
+
 .gallery-header {
     display: flex;
     justify-content: space-between;
@@ -141,7 +159,7 @@
 
 .more-image{
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     right: 16px;
     border-radius: 100px;
     background-color: rgba(0, 0, 0, 0.445);
@@ -151,11 +169,84 @@
     font-size: 14px;
 }
 
+.gallery-grid-responsive{
+    display: none;
+}
+
+@media (max-width: 750px){
+    .gallery-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .back-link{
+        background-color: rgba(0, 0, 0, 0.671);
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .btn-share, .btn-save{
+        border-radius: 100%;
+    }
+
+    .btn-save{
+        padding: 8px 12px;
+    }
+
+    .btn-share{
+        padding: 14px 14px;
+    }
+
+    .heart-text{
+        display: none;
+    }
+
+    .btn-share span{
+        display: none;
+    }
+
+    .gallery-grid{
+        display: none;
+    }
+
+    .gallery-grid-responsive {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth; /* Smooth scrolling for better user experience */
+        width: 100%; /* Make sure the container takes the full width */
+    }
+    .side-images {
+        display: flex;
+    }
+    
+    .side-image {
+        min-width: 500px; /* Use min-width to prevent shrinking */
+        height: 300px;
+    }   
+
+    .more-image{
+        bottom: 13px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 1350px){
+    .more-image{
+        bottom: 13px;
+    }
+}
+
 /* Overview */
 .tabs {
     display: flex;
     border-bottom: 1px solid #e5e5e5;
-    margin: 24px 0px;
+    margin: 10px 0px 24px 0px;
 }
 
 .tab {
@@ -208,7 +299,7 @@
 .rating-badge {
     background: #006644;
     color: white;
-    padding: 4px 8px;
+    padding: 6px 8px;
     border-radius: 4px;
     font-weight: 500;
     margin-right: 4px;
@@ -284,11 +375,6 @@
     position: relative;
     margin-bottom: 16px;
     flex: 1;
-}
-
-.map-container {
-    width: 100%;
-    max-width: 400px;
     border-radius: 16px;
     overflow: hidden;
     background: white;
@@ -350,6 +436,34 @@
 .drive-time {
     margin-left: auto;
     color: black;
+}
+
+@media (max-width: 780px){
+.explore{
+    flex-direction: column;
+}
+
+.map-container{
+    width: 100%;
+}
+
+.locations{
+    width: 100%;
+}
+}
+
+@media (max-width: 1150px){
+    .content-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .member-content {
+        padding: 0;
+    }
+
+    .property-id{
+        margin-bottom: 36px;
+    }
 }
 
 /* Booking Sidebar Styles */
@@ -583,6 +697,16 @@
 
 .property-id span{
     font-weight: normal;
+}
+
+@media (max-width: 1150px){
+    .member-content {
+        justify-content: start;
+    }
+
+    .property-id{
+        margin-bottom: 36px;
+    }
 }
 
 /* Room */
@@ -836,6 +960,17 @@
     margin-top: 10px;
 }
 
+@media (max-width: 670px){
+    .amenities-about{
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .amenities-grid-about{
+        margin-bottom: 46px;
+    }
+}
+
 /* Question */
 .question{
     border-radius: 10px;
@@ -861,7 +996,7 @@
 .beta-badge {
     background-color: #222222;
     color: white;
-    padding: 2px 6px;
+    padding: 4px 6px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;

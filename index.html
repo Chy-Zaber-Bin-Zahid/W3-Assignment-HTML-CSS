@@ -16,14 +16,15 @@
             <a href="#" class="nav-link">Help</a>
             <a href="#" class="nav-link">My trips</a>
             <a href="#" class="nav-link">Sign in</a>
+            <a href="#" class="nav-responsive"><i class="fa-solid fa-user "></i></a>
         </nav>
     </header>
     <!-- Gallery -->
-    <section class="container">
+    <section class="gallery container">
         <div class="gallery-header">
             <a href="#" class="back-link">&#129104; See all properties</a>
             <div class="action-buttons">
-                <button class="btn-share"><i class="fa fa-upload"></i> Share</button>
+                <button class="btn-share"><i class="fa fa-upload"></i> <span>Share</span></button>
                 <button class="btn-save"><span class="heart">&#9825;</span> <h1 class="heart-text">Save</h1></button>
             </div>
         </div>
@@ -32,6 +33,29 @@
                 <img src="/images/nature-1.jpg" alt="Deck overlooking lake">
             </div>
             <div class="side-images">
+                <div class="side-image">
+                    <img src="/images/nature-2.jpg" alt="Cottage exterior">
+                </div>
+                <div class="side-image">
+                    <img src="/images/nature-3.jpg" alt="Living room">
+                </div>
+                <div class="side-image">
+                    <img src="/images/nature-1.jpg" alt="Interior view">
+                </div>
+                <div class="side-image">
+                    <img src="/images/nature-2.jpg" alt="More photos">
+                </div>
+            </div>
+            <div class="more-image">
+                &#128444; &MediumSpace; 30+
+            </div>
+        </div>
+
+        <div class="gallery-grid-responsive">
+            <div class="side-images">
+               <div class="side-image">
+                    <img src="/images/nature-1.jpg" alt="Deck overlooking lake">
+               </div>
                 <div class="side-image">
                     <img src="/images/nature-2.jpg" alt="Cottage exterior">
                 </div>
@@ -181,7 +205,7 @@
                     </div>
     
                     <div class="booking-info">
-                        <p class="free-cancel">Free cancellation <span class="info-icon">ⓘ</span></p>
+                        <p class="free-cancel">Free cancellation <i class="fa-solid fa-circle-info"></i></p>
                         <p class="cancel-date">Before Mon, Nov 4</p>
                     </div>
                     <p class="dates-available">✓ Your dates are available</p>     
@@ -409,32 +433,34 @@
         </div>
     </section>
     <!-- Question -->
-    <section class="container question">
-        <div class="question-header">
-            <h2>Have a question?</h2>
-            <span class="beta-badge">Beta</span>
-        </div>
-        <p class="question-description">Get instant answers with AI powered search of property information and reviews.</p>
-       <div class="search">
-            <div class="search-box">
-                <div class="search-icon">
+    <section class="container ">
+        <div class="question">
+            <div class="question-header">
+                <h2>Have a question?</h2>
+                <span class="beta-badge"><i class="fa-solid fa-circle-plus"></i> &MediumSpace; Beta</span>
+            </div>
+            <p class="question-description">Get instant answers with AI powered search of property information and reviews.</p>
+           <div class="search">
+                <div class="search-box">
+                    <div class="search-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="search-label">Ask a question</label>
+                        <input type="text" placeholder="Is there free parking?">
+                    </div>
+                </div>
+                <button class="search-button">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"/>
                         <path d="M21 21l-4.35-4.35"/>
                     </svg>
-                </div>
-                <div class="input-wrapper">
-                    <label class="search-label">Ask a question</label>
-                    <input type="text" placeholder="Is there free parking?">
-                </div>
-            </div>
-            <button class="search-button">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="M21 21l-4.35-4.35"/>
-                </svg>
-            </button>
-       </div>
+                </button>
+           </div>
+        </div>
     </section>
     <!-- Rules -->
     <section class="container rules">
@@ -723,4 +749,6 @@
         </div>
     </section>
 </body>
+
+<script src="https://kit.fontawesome.com/501c147565.js" crossorigin="anonymous"></script>
 </html>
