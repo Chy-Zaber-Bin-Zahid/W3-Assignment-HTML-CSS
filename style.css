@@ -296,6 +296,12 @@
     font-weight: 500;
 }
 
+@media (max-width: 350px){
+    .tab{
+        padding: 12px 12px;
+    }
+}
+
 .content-wrapper {
     display: grid;
     grid-template-columns: 1fr 380px;
@@ -469,6 +475,12 @@
 .drive-time {
     margin-left: auto;
     color: black;
+}
+
+@media(max-width: 400px){
+    .property-title{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 780px){
@@ -735,6 +747,10 @@
 @media (max-width: 1150px){
     .member-content {
         justify-content: start;
+    }
+
+    .member-box{
+        padding: 24px 10px;
     }
 
     .property-id{
@@ -1551,6 +1567,24 @@
         height: 50%;
         background-color: #e5e7eb;
         z-index: 1;
+    }
+    
+}
+
+@media (max-width: 535px){
+    .timeline-points::before,    .timeline-points::after {
+
+        left: 48%;
+
+    }
+    
+}
+
+@media (max-width: 435px){
+    .timeline-points::before,    .timeline-points::after {
+
+        left: 47%;
+
     }
     
 }
