@@ -19,6 +19,47 @@
             <a href="#" class="nav-responsive"><i class="fa-solid fa-user "></i></a>
         </nav>
     </header>
+     <!-- Modal Region -->
+     <div class="modal" id="regionModal">
+        <div class="modal-main">
+            <div class="modal-content">
+                <button class="close-button" id="closeModal">&times;</button>
+                <h2>Display Settings</h2>
+                
+                <div class="modal-body">
+                    <div class="warning-message">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Changing your region could change your rewards program</p>
+                    </div>
+                    
+                    <p class="info-text">To stay with your current rewards program keep your region the same. One Key is currently only available in select regions.</p>
+                    
+                    <div class="input-group">
+                        <label for="region">Region</label>
+                        <select id="region" class="region-select">
+                            <option value="United States">United States</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Spain">Spain</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="currency">Currency</label>
+                        <select id="currency" class="currency-select" disabled>
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                        </select>
+                    </div>
+                    
+                    <button class="save-button" id="saveSettings">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Gallery -->
     <section class="gallery container">
         <div class="gallery-header">
@@ -791,7 +832,8 @@
             </button>
         </div>
     </div>
-</body>
 
+    <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/501c147565.js" crossorigin="anonymous"></script>
+</body>
 </html>
