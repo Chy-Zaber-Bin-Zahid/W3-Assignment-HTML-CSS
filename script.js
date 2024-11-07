@@ -1,5 +1,5 @@
 "use strict"
-// Modal Region
+//----- Modal Region ----//
 const currencyMap = {
     'United States': { currency: 'USD', symbol: '$' },
     'Portugal': { currency: 'EUR', symbol: '€' },
@@ -62,4 +62,31 @@ saveBtn.addEventListener('click', () => {
     document.body.style.overflow = 'auto';
         // Update the region link text
     regionLink.innerHTML = `🌐 ${selectedRegion}`;
+});
+
+//---- Save Heart ----//
+document.addEventListener('DOMContentLoaded', () => {
+    const heartBtn = document.querySelector('.btn-save');
+    const heartIcon = document.querySelector('.heart-icon');
+    
+    // Check localStorage on page load
+    const isActive = localStorage.getItem('heartActive') === 'true';
+    if (isActive) {
+        heartIcon.classList.add('active');
+    }
+    
+    // Toggle heart state and update localStorage
+    heartBtn.addEventListener('click', () => {
+        heartIcon.classList.toggle('active');
+        
+        // Store the current state
+        const currentState = heartIcon.classList.contains('active');
+        localStorage.setItem('heartActive', currentState);
+        
+        // Optional: Add a subtle animation
+        heartIcon.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+            heartIcon.style.transform = 'scale(1)';
+        }, 200);
+    });
 });

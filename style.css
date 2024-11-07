@@ -259,7 +259,26 @@
 
 }
 
-.heart-text{
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #ff385c;
+    stroke-width: 2;
+    fill: none;
+    transition: all 0.3s ease;
+}
+
+.heart-icon.active {
+    fill: #ff385c;
+    stroke: #ff385c;
+}
+
+.heart-text {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: black;
     color: rgb(92, 92, 92);
     font-size: 12px;
 }
