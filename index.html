@@ -19,13 +19,58 @@
             <a href="#" class="nav-responsive"><i class="fa-solid fa-user "></i></a>
         </nav>
     </header>
+     <!-- Modal Region -->
+     <div class="modal" id="regionModal">
+        <div class="modal-main">
+            <div class="modal-content">
+                <button class="close-button" id="closeModal">&times;</button>
+                <h2>Display Settings</h2>
+                
+                <div class="modal-body">
+                    <div class="warning-message">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Changing your region could change your rewards program</p>
+                    </div>
+                    
+                    <p class="info-text">To stay with your current rewards program keep your region the same. One Key is currently only available in select regions.</p>
+                    
+                    <div class="input-group">
+                        <label for="region">Region</label>
+                        <select id="region" class="region-select">
+                            <option value="United States">United States</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Spain">Spain</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="currency">Currency</label>
+                        <select id="currency" class="currency-select" disabled>
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                        </select>
+                    </div>                    
+                    <button class="save-button" id="saveSettings">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Gallery -->
     <section class="gallery container">
         <div class="gallery-header">
             <a href="#" class="back-link">&#129104; See all properties</a>
             <div class="action-buttons">
                 <button class="btn-share"><i class="fa fa-upload"></i> <span>Share</span></button>
-                <button class="btn-save"><span class="heart">&#9825;</span> <h1 class="heart-text">Save</h1></button>
+                <button class="btn-save">
+                    <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    <span class="heart-text">Save</span>
+                </button>
             </div>
         </div>
         <div class="gallery-grid">
@@ -791,7 +836,8 @@
             </button>
         </div>
     </div>
-</body>
 
+    <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/501c147565.js" crossorigin="anonymous"></script>
+</body>
 </html>
